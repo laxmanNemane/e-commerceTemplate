@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Emcommerce portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 56px;
+            width: 100%;
+            background-color: blue;
+
+        }
+
+        .conatiner {
+            width: 80%;
+            height: 56px;
+            margin: 0 20%;
+
+
+        }
+
+        nav {
+            display: flex;
+
+            /* width: 25%;
+            height: 25px; */
+            padding: 10px 0 0 0;
+        }
+
+        nav input {
+            width: 30%;
+            height: 26px;
+            margin-left: 30px;
+            padding: 0px 5px;
+        }
+
+        .fa-search {
+            /* border: 1px solid black; */
+            background-color: white;
+            padding: 5px 5px;
+            height: 19px;
+        }
+
+
+        nav img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            /* margin-right: 4%; */
+        }
+
+        .login_btn {
+            margin-left: 40px;
+            padding: 5px 25px;
+            background: white;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-left: 5%;
+            margin-top: 6px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .fa-shopping-cart,
+        .fa-angle-down {
+            margin: 0 0 0 5px;
+        }
+
+        /* home page */
+        .header2 {
+            width: 100%;
+            height: 120px;
+            background-color: rgb(235, 243, 243);
+        }
+
+        .product {
+            width: 80%;
+            margin: auto;
+        }
+
+        .categories {
+            /* width: 80%; */
+            display: flex;
+        }
+
+        .men {
+            width: 100px;
+            padding: 20px 0 20px 0;
+            margin: 0 20px 0 10px
+        }
+
+        .men>img {
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .men>p {
+            /* text-align: center; */
+            color: black;
+        }
+
+        /* home page */
+
+        section::before {
+            background-image: url(https://source.unsplash.com/collection/190727/1600x900);
+            background-size: cover;
+            content: "";
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 300px;
+            color: black;
+            z-index: -1;
+            margin: 0;
+            opacity: 0.5;
+        }
+
+
+        .card{
+            width: 250px;
+            height: 130px;
+            border-radius: 20px;
+            padding: 20px 20px;
+            background-color: white;
+            box-sizing: 5px 5px 5px rgba(0,0,0,0.8);
+        }
+
+        .Home_page{
+            height: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            margin-top: 70px;
+        }
+        p{
+            color: black;
+        }
+
+        /* products */
+
+        .products{
+            width: 80%;
+            height: 400px;
+            /* margin-top: 200px; */
+            margin: 200px auto;
+        }
+
+        .card_product{
+            width: 300px;
+        }
+        .products_list{
+            display: flex;
+        }
+
+        .product_detail{
+            text-align: center;
+        }
+      
+
+        /* second product line */
+        .second_line{
+            margin-top: 30px;
+        }
+
+        .btn{
+            padding: 5px 20px;
+            height: 30px;
+        margin-right: 20px;
+            position: relative;
+            /* left: 20px; */
+        }
+        .product_heading{
+           display: flex;
+           justify-content: space-between;
+        }
+
+
+        footer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            margin:18% 0 0 0;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header Website -->
+    <header>
+        <div class="conatiner">
+            <nav>
+                <img src="image/images.jpeg" alt="">
+                <input type="text" placeholder="Search here"><i class="fa fa-search" aria-hidden="true"></i>
+                <button class="login_btn">Login</button>
+                <p>More<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                <p>Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i></p>
+            </nav>
+        </div>
+    </header>
+    <div class="header2">
+        <div class="product">
+            <div class="categories">
+                <div class="men">
+                    <img src="image/images.jpeg" alt="" width="50px" height="50px">
+                    <p>Mens<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                </div>
+                <div class="men">
+                    <img src="image/images.jpeg" alt="" width="50px" height="50px">
+                    <p>Women's <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                </div>
+                <div class="men">
+                    <img src="image/images.jpeg" alt="" width="50px" height="50px">
+                    <p>Kids<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                </div>
+                <div class="men">
+                    <img src="image/images.jpeg" alt="" width="50px" height="50px">
+                    <p>Accessories<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                </div>
+                <div class="men">
+                    <img src="image/images.jpeg" alt="" width="50px" height="50px">
+                    <p>Travals<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                </div>
+                <div class="men">
+                    <img src="image/images.jpeg" alt="" width="50px" height="50px">
+                    <p>Beauty<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                </div>
+                <div class="men">
+                    <img src="image/images.jpeg" alt="" width="50px" height="50px">
+                    <p>Home<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                </div>
+                <div class="men">
+                    <img src="image/images.jpeg" alt="" width="50px" height="50px">
+                    <p>Applinces<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                </div>
+                <div class="men">
+                    <img src="image/images.jpeg" alt="" width="50px" height="50px">
+                    <p>Home<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+                </div>
+
+            </div>
+        </div>
+        <section>
+            <div class="Home_page">
+               <h1 style="color: rgb(3, 3, 3); font-size: 60px;"> Welcome TO Shoping Portal </h1>
+            </div>
+        </section>
+
+        <!-- product Section -->
+
+        <div class="products">
+            <div class="product_heading">
+                <h2 class="item_heading">Best Sellers Product's</h2>
+                    <button class="btn">View More</button>
+
+            </div>
+            <hr style="margin:10px 0 10px 0">
+            <div class="products_list">
+                <div class="card_product">
+                    <img src="image/images.jpeg" alt="">
+                    <div class="product_detail">
+                        <strong class="product_name">Bag's</strong><br>
+                        <small class="product_description">Lorem ipsum dolor sit amet.</small><br>
+                        <small class="product_slogan">Lorem, ipsum dolor.</small>
+                    </div>
+                </div>
+                <div class="card_product">
+                    <img src="image/images.jpeg" alt="">
+                    <div class="product_detail">
+                        <strong class="product_name">Bag's</strong><br>
+                        <small class="product_description">Lorem ipsum dolor sit amet.</small><br>
+                        <small class="product_slogan">Lorem, ipsum dolor.</small>
+                    </div>
+                </div>
+                <div class="card_product">
+                    <img src="image/images.jpeg" alt="">
+                    <div class="product_detail">
+                        <strong class="product_name">Bag's</strong><br>
+                        <small class="product_description">Lorem ipsum dolor sit amet.</small><br>
+                        <small class="product_slogan">Lorem, ipsum dolor.</small>
+                    </div>
+                </div>
+                <div class="card_product">
+                    <img src="image/images.jpeg" alt="">
+                    <div class="product_detail">
+                        <strong class="product_name">Bag's</strong><br>
+                        <small class="product_description">Lorem ipsum dolor sit amet.</small><br>
+                        <small class="product_slogan">Lorem, ipsum dolor.</small>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        <div class="second_line">
+            <div class="product_heading">
+                <h2 class="item_heading">Recomanded  Product's</h2>
+                    <button class="btn">View More</button>
+
+            </div>
+            <hr style="margin:10px 0 10px 0">
+            <div class="products_list">
+                <div class="card_product">
+                    <img src="image/images.jpeg" alt="">
+                    <div class="product_detail">
+                        <strong class="product_name">Bag's</strong><br>
+                        <small class="product_description">Lorem ipsum dolor sit amet.</small><br>
+                        <small class="product_slogan">Lorem, ipsum dolor.</small>
+                    </div>
+                </div>
+                <div class="card_product">
+                    <img src="image/images.jpeg" alt="">
+                    <div class="product_detail">
+                        <strong class="product_name">Bag's</strong><br>
+                        <small class="product_description">Lorem ipsum dolor sit amet.</small><br>
+                        <small class="product_slogan">Lorem, ipsum dolor.</small>
+                    </div>
+                </div>
+                <div class="card_product">
+                    <img src="image/images.jpeg" alt="">
+                    <div class="product_detail">
+                        <strong class="product_name">Bag's</strong><br>
+                        <small class="product_description">Lorem ipsum dolor sit amet.</small><br>
+                        <small class="product_slogan">Lorem, ipsum dolor.</small>
+                    </div>
+                </div>
+                <div class="card_product">
+                    <img src="image/images.jpeg" alt="">
+                    <div class="product_detail">
+                        <strong class="product_name">Bag's</strong><br>
+                        <small class="product_description">Lorem ipsum dolor sit amet.</small><br>
+                        <small class="product_slogan">Lorem, ipsum dolor.</small>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            
+        </div>
+    </div>
+    <footer>
+        <p>copyright</p>
+    </footer>
+
+</body>
+
+</html>
